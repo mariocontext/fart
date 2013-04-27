@@ -318,11 +318,11 @@ var symbols = {
    content: {
    dom: [
    {
-      r: ['0','1','78','147','auto','auto'],
+      rect: ['0','1','78','147','auto','auto'],
       id: 'fart-rays',
-      t: 'image',
-      tag: 'img',
-      f: ['rgba(0,0,0,0)','images/fart-rays.png']
+      fill: ['rgba(0,0,0,0)','images/fart-rays.png'],
+      type: 'image',
+      tag: 'img'
    }],
    symbolInstances: [
    ]
@@ -345,6 +345,9 @@ var symbols = {
          toState: "",
          duration: 1025,
          autoPlay: true,
+         labels: {
+            "fartSound1": 250
+         },
          timeline: [
             { id: "dg1", tween: [ "style", "${_fart-rays}", "opacity", '0', { fromValue: '0'}], position: 0, duration: 0 },
             { id: "dg2", tween: [ "style", "${_fart-rays}", "opacity", '1', { fromValue: '0'}], position: 250, duration: 0 },
