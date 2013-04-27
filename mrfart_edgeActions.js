@@ -14,6 +14,8 @@
 
 				fartObject.play();
 				console.log(sym.myAnimSpot());
+				var myAnimPlace = sym.getVariable("myAnimSpot");
+				myAnimPlace.play();
 				
 				}
          
@@ -38,10 +40,11 @@
          
          sym.myAnimSpot = function() {
          	
-         	var randomAnim = "spot" + sym.getRandomInt(1,6);
+         	var randomAnim = "audio0" + sym.getRandomInt(1,6);
          	return randomAnim;
          
          };
+         
 
 
 		});
@@ -63,6 +66,14 @@
 
 })("fart_rays_g");
    //Edge symbol end:'fart_rays_g'
+
+   //=========================================================
+   
+   //Edge symbol: 'fart_ray_basic'
+   (function(symbolName) {   
+   
+   })("fart_ray_basic");
+   //Edge symbol end:'fart_ray_basic'
 
 })(jQuery, AdobeEdge, "EDGE-1366769845110");
 

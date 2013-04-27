@@ -318,20 +318,18 @@ var symbols = {
    content: {
    dom: [
    {
-      rect: ['0','1','78','147','auto','auto'],
-      id: 'fart-rays',
-      fill: ['rgba(0,0,0,0)','images/fart-rays.png'],
-      type: 'image',
-      tag: 'img'
+      id: 'fart_ray_basic',
+      type: 'rect',
+      rect: ['0','1','auto','auto','auto','auto']
    }],
    symbolInstances: [
-   ]
+   {
+      id: 'fart_ray_basic',
+      symbolName: 'fart_ray_basic'
+   }   ]
    },
    states: {
       "Base State": {
-         "${_fart-rays}": [
-            ["style", "opacity", '0']
-         ],
          "${symbolSelector}": [
             ["style", "height", '147px'],
             ["style", "overflow", 'hidden'],
@@ -343,17 +341,13 @@ var symbols = {
       "Default Timeline": {
          fromState: "Base State",
          toState: "",
-         duration: 1025,
+         duration: 250,
          autoPlay: true,
          labels: {
             "fartSound1": 250
          },
          timeline: [
-            { id: "dg1", tween: [ "style", "${_fart-rays}", "opacity", '0', { fromValue: '0'}], position: 0, duration: 0 },
-            { id: "dg2", tween: [ "style", "${_fart-rays}", "opacity", '1', { fromValue: '0'}], position: 250, duration: 0 },
-            { id: "dg3", tween: [ "style", "${_fart-rays}", "opacity", '0', { fromValue: '1'}], position: 515, duration: 0 },
-            { id: "dg4", tween: [ "style", "${_fart-rays}", "opacity", '1', { fromValue: '0'}], position: 750, duration: 0 },
-            { id: "dg5", tween: [ "style", "${_fart-rays}", "opacity", '0', { fromValue: '1'}], position: 1025, duration: 0 }         ]
+         ]
       }
    }
 },
@@ -555,6 +549,54 @@ var symbols = {
          autoPlay: true,
          timeline: [
          ]
+      }
+   }
+},
+"fart_ray_basic": {
+   version: "1.5.0",
+   minimumCompatibleVersion: "1.5.0",
+   build: "1.5.0.217",
+   baseState: "Base State",
+   initialState: "Base State",
+   gpuAccelerate: false,
+   resizeInstances: false,
+   content: {
+   dom: [
+   {
+      rect: ['0px','0px','78','147','auto','auto'],
+      id: 'fart-rays',
+      fill: ['rgba(0,0,0,0)','images/fart-rays.png'],
+      type: 'image',
+      tag: 'img'
+   }],
+   symbolInstances: [
+   ]
+   },
+   states: {
+      "Base State": {
+         "${symbolSelector}": [
+            ["style", "height", '147px'],
+            ["style", "width", '78px']
+         ],
+         "${_fart-rays}": [
+            ["style", "top", '0px'],
+            ["style", "opacity", '0'],
+            ["style", "left", '0px']
+         ]
+      }
+   },
+   timelines: {
+      "Default Timeline": {
+         fromState: "Base State",
+         toState: "",
+         duration: 1025,
+         autoPlay: true,
+         timeline: [
+            { id: "dg1", tween: [ "style", "${_fart-rays}", "opacity", '0', { fromValue: '0'}], position: 0, duration: 0 },
+            { id: "dg2", tween: [ "style", "${_fart-rays}", "opacity", '1', { fromValue: '0'}], position: 250, duration: 0 },
+            { id: "dg3", tween: [ "style", "${_fart-rays}", "opacity", '0', { fromValue: '1'}], position: 515, duration: 0 },
+            { id: "dg4", tween: [ "style", "${_fart-rays}", "opacity", '1', { fromValue: '0'}], position: 750, duration: 0 },
+            { id: "dg5", tween: [ "style", "${_fart-rays}", "opacity", '0', { fromValue: '1'}], position: 1025, duration: 0 }         ]
       }
    }
 }

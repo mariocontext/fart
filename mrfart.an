@@ -1,7 +1,6 @@
 {
 
-	"HTMLFileName":"mrfart.html",
-	"PubUseChromeFrameInstaller":"false",
+	"PubChromeFrameInstallerPrompt":"none",
 	"pref__general__AutoKeyframeProperties":"true",
 	"ModelData":"{\
 \"stage\": {\
@@ -9,6 +8,8 @@
       \"Default Timeline\": {\
             \"ElementKeyframes\": {\
                 \"${_fart_rays_g}\": [], \
+                \"${_fart_ray_basicCopy}\": [], \
+                \"${_fart_ray_basic}\": [], \
                 \"${_bent_man}\": []\
             }\
       }\
@@ -47,7 +48,11 @@
    \"timelines\": {\
       \"Default Timeline\": {\
             \"ElementKeyframes\": {\
-                \"${_fart-rays}\": []\
+                \"${_fart_ray_basic}\": [], \
+                \"${_fart-rays}\": [], \
+                \"${_fart_ray_basicCopy}\": [], \
+                \"${_fart_ray_basic3}\": [], \
+                \"${_fart_ray_basic2}\": []\
             }\
       }\
    }},\
@@ -73,20 +78,62 @@
 \"Down-level\": {\
    \"timelines\": {\
 \
+   }},\
+\"fart_ray_basic\": {\
+   \"timelines\": {\
+      \"Default Timeline\": {\
+            \"ElementKeyframes\": {\
+                \"${_bent_man2}\": [], \
+                \"${_fart-rays}\": []\
+            }\
+      }\
    }}\
 }",
-	"fart_rays_g-Default Timeline_playhead_ms":"0",
 	"usedBOM":"false",
-	"PubChromeFrameInstallerPrompt":"none",
-	"pref__general__codeView":"fullView",
 	"symbol_fart_rays_g":{
+		"element_${_fart_ray_basic}":{
+			"timelineColor2":"0xba5b89",
+			"animationEnabled":"true",
+			"timelineColor3":"0x734a5f",
+			"timelineColor":"0xdb619d"},
+		"element_${_fart_ray_basic2}":{
+			"timelineColor2":"0x81aa62",
+			"animationEnabled":"true",
+			"timelineColor3":"0x5b6c4d",
+			"timelineColor":"0x91c767"},
+		"element_${_fart_ray_basicCopy}":{
+			"timelineColor2":"0xd8b467",
+			"timelineColor3":"0x81714f",
+			"timelineColor":"0xffd46d",
+			"timelineTreeOpened":"true",
+			"animationEnabled":"false"},
 		"element_${_fart-rays}":{
 			"timelineColor2":"0xd35d6e",
 			"timelineColor3":"0x7e4b52",
 			"timelineColor":"0xfb657a",
 			"timelineTreeOpened":"true",
-			"animationEnabled":"true"}},
-	"pref__general__AutoKeyframePropertiesArmed":"true",
+			"animationEnabled":"false"},
+		"element_${_fart_ray_basic3}":{
+			"timelineColor2":"0x4fa275",
+			"animationEnabled":"true",
+			"timelineColor3":"0x456a55",
+			"timelineColor":"0x50bd82"}},
+	"symbol_fart_ray_basic":{
+		"element_${_fart-rays}":{
+			"timelineColor2":"0xcbbd71",
+			"animationEnabled":"true",
+			"timelineColor3":"0x7b7652",
+			"timelineColor":"0xeedf79"},
+		"element_${_bent_man2}":{
+			"timelineColor2":"0x1aa38f",
+			"animationEnabled":"true",
+			"timelineColor3":"0x2a6a61",
+			"timelineColor":"0x00bda4"}},
+	"HTMLFileName":"mrfart.html",
+	"PubUseChromeFrameInstaller":"false",
+	"fart_rays_g-Default Timeline_playhead_ms":"0",
+	"viewStartMs":"-25",
+	"pref__general__AutoKeyframePropertiesArmed":"false",
 	"fart_rays_g-Default Timeline_mark_ms":"-1",
 	"symbol_stage":{
 		"element_${_leg_thigh_g}":{
@@ -144,13 +191,15 @@
 			"animationEnabled":"false",
 			"timelineColor3":"0x2a605c",
 			"timelineColor":"0x00a096"}},
-	"TransitionIdCounter":"6",
+	"TransitionIdCounter":"12",
 	"CompZoomFactor":"100",
-	"viewStartY":"0",
+	"StageZoomFactor":"100",
 	"pixelsPerMs":"0.2",
+	"fart_ray_basic-Default Timeline_playhead_ms":"0",
+	"pref__general__codeView":"fullView",
 	"stage-Default Timeline_mark_ms":"-1",
-	"nextElementColorIndex":"12",
-	"pref__general__GenerateSmoothTransitions":"true",
-	"stage-Default Timeline_playhead_ms":"1025",
 	"head_g-Default Timeline_playhead_ms":"0",
-	"StageZoomFactor":"100"}
+	"stage-Default Timeline_playhead_ms":"1025",
+	"viewStartY":"0",
+	"nextElementColorIndex":"5",
+	"pref__general__GenerateSmoothTransitions":"true"}
