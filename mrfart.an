@@ -133,7 +133,7 @@
 	"PubUseChromeFrameInstaller":"false",
 	"fart_rays_g-Default Timeline_playhead_ms":"0",
 	"viewStartMs":"-25",
-	"pref__general__AutoKeyframePropertiesArmed":"false",
+	"pref__general__AutoKeyframePropertiesArmed":"true",
 	"fart_rays_g-Default Timeline_mark_ms":"-1",
 	"symbol_stage":{
 		"element_${_leg_thigh_g}":{
@@ -199,7 +199,7 @@
 	"pref__general__codeView":"fullView",
 	"stage-Default Timeline_mark_ms":"-1",
 	"head_g-Default Timeline_playhead_ms":"0",
-	"stage-Default Timeline_playhead_ms":"1025",
+	"stage-Default Timeline_playhead_ms":"250",
 	"viewStartY":"0",
 	"nextElementColorIndex":"5",
 	"pref__general__GenerateSmoothTransitions":"true"}

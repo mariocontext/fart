@@ -341,7 +341,7 @@ var symbols = {
       "Default Timeline": {
          fromState: "Base State",
          toState: "",
-         duration: 250,
+         duration: 1025,
          autoPlay: true,
          labels: {
             "fartSound1": 250
