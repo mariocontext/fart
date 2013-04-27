@@ -1,2 +1,569 @@
+/**
+ * Adobe Edge: symbol definitions
+ */
+(function($, Edge, compId){
+//images folder
+var im='images/';
 
-(function($,Edge,compId){var _=null,y=true,n=false,x49='87',x33='93',x4='rgb(255,255,255)',x26='Group-2',x34='Group-4',x39='Group-5',x63='51px',a='Base State',x28='arms_g',x17='hidden',x20='155',x44='fart-rays',dt='Default Timeline',e7='${_bent_man}',x55='cloud-farts',x46='fart_rays_g',x24='82',x15='head_g',e5='${_stage}',x43='147',x9='90px',x30='Group-3',x32='leg_thigh_g',bg='background-color',x10='auto',ov='overflow',x50='100',x3='stage',x68='295px',e47='${_fart-rays}',c='color',x14='img',x38='35',x36='leg_calf2_g',x41='foot_g',x18='1',x8='0',e72='${_leg_thigh_g}',x48='2',lf='left',e74='${_foot_g}',e73='${_leg_calf2_g}',e71='${_head_g}',m='rect',x59='0px',tp='top',h='height',e70='${_arms_g}',x2='1.5.0.217',e75='${_body_g}',x29='94',x51='speak-fart',x69='bent_man',x11='Group',x1='1.5.0',o='opacity',x65='34px',x64='170px',x62='94px',x25='83',x60='45px',e16='${symbolSelector}',x58='114px',x54='119',x42='78',x23='body_g',x53='speak_fart_g',x19='156',x67='33px',x12='rgba(0,0,0,0)',s='style',x37='81',w='width',g='image',x6='pointer',ql='linear',x57='cloud_farts_g',x21='Group-1',x66='234px',x61='134px';var im='images/';var g31='Group-3.png',g22='Group-1.png',g35='Group-4.png',g52='speak-fart.png',g27='Group-2.png',g13='Group.png',g56='cloud-farts.png',g40='Group-5.png',g45='fart-rays.png';var fonts={};var P=Edge.P,T=Edge.T,A=Edge.A;var resources=[];var symbols={"stage":{v:x1,mv:x1,b:x2,bS:a,iS:a,gpu:n,rI:n,cn:{dom:[{id:'fart_rays_g',t:m,r:['12','158','0','0','auto','auto'],tf:[]},{id:'bent_man',t:m,r:['93','83','auto','auto','auto','auto'],cu:['pointer']}],sI:[{id:'fart_rays_g',sN:'fart_rays_g'},{id:'bent_man',sN:'bent_man'}]},s:{},tl:{"Default Timeline":{fS:a,tS:"",d:1025,a:y,tt:[]}}},"head_g":{v:x1,mv:x1,b:x2,bS:a,iS:a,gpu:n,rI:n,cn:{dom:[{r:[x8,x8,x9,x9,x10,x10],id:x11,f:[x12,im+g13],t:g,tag:x14}],sI:[]},s:{},tl:{"Default Timeline":{fS:a,tS:"",d:0,a:y,tt:[]}}},"body_g":{v:x1,mv:x1,b:x2,bS:a,iS:a,gpu:n,rI:n,cn:{dom:[{r:[x8,x18,x19,x20,x10,x10],id:x21,f:[x12,im+g22],t:g,tag:x14}],sI:[]},s:{},tl:{"Default Timeline":{fS:a,tS:"",d:0,a:y,tt:[]}}},"arms_g":{v:x1,mv:x1,b:x2,bS:a,iS:a,gpu:n,rI:n,cn:{dom:[{r:[x8,x8,x24,x25,x10,x10],id:x26,f:[x12,im+g27],t:g,tag:x14}],sI:[]},s:{},tl:{"Default Timeline":{fS:a,tS:"",d:0,a:y,tt:[]}}},"leg_thigh_g":{v:x1,mv:x1,b:x2,bS:a,iS:a,gpu:n,rI:n,cn:{dom:[{r:[x8,x8,x29,x29,x10,x10],id:x30,f:[x12,im+g31],t:g,tag:x14}],sI:[]},s:{},tl:{"Default Timeline":{fS:a,tS:"",d:0,a:y,tt:[]}}},"leg_calf2_g":{v:x1,mv:x1,b:x2,bS:a,iS:a,gpu:n,rI:n,cn:{dom:[{r:[x8,x8,x33,x33,x10,x10],id:x34,f:[x12,im+g35],t:g,tag:x14}],sI:[]},s:{},tl:{"Default Timeline":{fS:a,tS:"",d:0,a:y,tt:[]}}},"foot_g":{v:x1,mv:x1,b:x2,bS:a,iS:a,gpu:n,rI:n,cn:{dom:[{r:[x8,x8,x37,x38,x10,x10],id:x39,f:[x12,im+g40],t:g,tag:x14}],sI:[]},s:{},tl:{"Default Timeline":{fS:a,tS:"",d:0,a:y,tt:[]}}},"fart_rays_g":{v:x1,mv:x1,b:x2,bS:a,iS:a,gpu:n,rI:n,cn:{dom:[{r:[x8,x18,x42,x43,x10,x10],id:x44,f:[x12,im+g45],t:g,tag:x14}],sI:[]},s:{},tl:{"Default Timeline":{fS:a,tS:"",d:1025,a:y,tt:[]}}},"speak_fart_g":{v:x1,mv:x1,b:x2,bS:a,iS:a,gpu:n,rI:n,cn:{dom:[{r:[x8,x48,x49,x50,x10,x10],id:x51,f:[x12,im+g52],t:g,tag:x14}],sI:[]},s:{},tl:{"Default Timeline":{fS:a,tS:"",d:0,a:y,tt:[]}}},"cloud_farts_g":{v:x1,mv:x1,b:x2,bS:a,iS:a,gpu:n,rI:n,cn:{dom:[{r:[x8,x8,x25,x54,x10,x10],id:x55,f:[x12,im+g56],t:g,tag:x14}],sI:[]},s:{},tl:{"Default Timeline":{fS:a,tS:"",d:0,a:y,tt:[]}}},"bent_man":{v:x1,mv:x1,b:x2,bS:a,iS:a,gpu:n,rI:n,cn:{dom:[{id:x15,t:m,tf:[],r:[x58,x59,x8,x8,x10,x10]},{id:x23,t:m,tf:[],r:[x59,x60,x8,x8,x10,x10]},{id:x28,t:m,tf:[],r:[x61,x62,x8,x8,x10,x10]},{id:x32,t:m,tf:[],r:[x63,x64,x8,x8,x10,x10]},{id:x36,t:m,tf:[],r:[x65,x66,x8,x8,x10,x10]},{id:x41,t:m,tf:[],r:[x67,x68,x8,x8,x10,x10]}],sI:[{id:'body_g',sN:'body_g'},{id:'leg_calf2_g',sN:'leg_calf2_g'},{id:'arms_g',sN:'arms_g'},{id:'leg_thigh_g',sN:'leg_thigh_g'},{id:'foot_g',sN:'foot_g'},{id:'head_g',sN:'head_g'}]},s:{},tl:{"Default Timeline":{fS:a,tS:"",d:0,a:y,tt:[]}}}};var S1=symbols[x3];var tl0=S1.tl[dt].tt,st1=S1.s[a]={},A1=A(_,tl0,st1);A1.A(e5).P(bg,x4,c).P(h,480).P(w,320);A1.A(e7).P("cursor",x6);var S2=symbols[x15];var tl1=S2.tl[dt].tt,st2=S2.s[a]={},A2=A(_,tl1,st2);A2.A(e16).P(h,90).P(w,90).P(ov,x17);var S3=symbols[x23];var tl2=S3.tl[dt].tt,st3=S3.s[a]={},A3=A(_,tl2,st3);A3.A(e16).P(h,155).P(w,156).P(ov,x17);var S4=symbols[x28];var tl3=S4.tl[dt].tt,st4=S4.s[a]={},A4=A(_,tl3,st4);A4.A(e16).P(h,83).P(w,82).P(ov,x17);var S5=symbols[x32];var tl4=S5.tl[dt].tt,st5=S5.s[a]={},A5=A(_,tl4,st5);A5.A(e16).P(h,94).P(w,94).P(ov,x17);var S6=symbols[x36];var tl5=S6.tl[dt].tt,st6=S6.s[a]={},A6=A(_,tl5,st6);A6.A(e16).P(h,93).P(w,93).P(ov,x17);var S7=symbols[x41];var tl6=S7.tl[dt].tt,st7=S7.s[a]={},A7=A(_,tl6,st7);A7.A(e16).P(h,35).P(w,81).P(ov,x17);var S8=symbols[x46];var tl7=S8.tl[dt].tt,st8=S8.s[a]={},A8=A(_,tl7,st8);A8.A(e16).P(h,147).P(w,78).P(ov,x17);A8.A(e47).P(o,0,_,_,"").T(0,0).T(0.25,1).T(0.515,0).T(0.75,1).T(1.025,0);var S9=symbols[x53];var tl8=S9.tl[dt].tt,st9=S9.s[a]={},A9=A(_,tl8,st9);A9.A(e16).P(h,100).P(w,87).P(ov,x17);var S10=symbols[x57];var tl9=S10.tl[dt].tt,st10=S10.s[a]={},A10=A(_,tl9,st10);A10.A(e16).P(h,119).P(w,83).P(ov,x17);var S11=symbols[x69];var tl10=S11.tl[dt].tt,st11=S11.s[a]={},A11=A(_,tl10,st11);A11.A(e70).P(lf,134).P(tp,94);A11.A(e71).P(lf,114).P(tp,0);A11.A(e72).P(lf,51).P(tp,170);A11.A(e73).P(lf,34).P(tp,234);A11.A(e74).P(lf,33).P(tp,295);A11.A(e16).P(h,330).P(w,216);A11.A(e75).P(lf,0).P(tp,45);Edge.registerCompositionDefn(compId,symbols,fonts,resources);$(window).ready(function(){Edge.launchComposition(compId);});})(jQuery,AdobeEdge,"EDGE-1366769845110");
+var fonts = {};
+
+
+var resources = [
+];
+var symbols = {
+"stage": {
+   version: "1.5.0",
+   minimumCompatibleVersion: "1.5.0",
+   build: "1.5.0.217",
+   baseState: "Base State",
+   initialState: "Base State",
+   gpuAccelerate: false,
+   resizeInstances: false,
+   content: {
+         dom: [
+         {
+            id:'fart_rays_g',
+            type:'rect',
+            rect:['12','158','0','0','auto','auto'],
+            transform:[]
+         },
+         {
+            id:'bent_man',
+            type:'rect',
+            rect:['93','83','auto','auto','auto','auto'],
+            cursor:['pointer']
+         }],
+         symbolInstances: [
+         {
+            id:'fart_rays_g',
+            symbolName:'fart_rays_g'
+         },
+         {
+            id:'bent_man',
+            symbolName:'bent_man'
+         }
+         ]
+      },
+   states: {
+      "Base State": {
+         "${_stage}": [
+            ["style", "height", '480px'],
+            ["color", "background-color", 'rgb(255,255,255)'],
+            ["style", "width", '320px']
+         ],
+         "${_bent_man}": [
+            ["style", "cursor", 'pointer']
+         ]
+      }
+   },
+   timelines: {
+      "Default Timeline": {
+         fromState: "Base State",
+         toState: "",
+         duration: 0,
+         autoPlay: true,
+         timeline: [
+         ]
+      }
+   }
+},
+"head_g": {
+   version: "1.5.0",
+   minimumCompatibleVersion: "1.5.0",
+   build: "1.5.0.217",
+   baseState: "Base State",
+   initialState: "Base State",
+   gpuAccelerate: false,
+   resizeInstances: false,
+   content: {
+   dom: [
+   {
+      r: ['0','0','90px','90px','auto','auto'],
+      id: 'Group',
+      t: 'image',
+      tag: 'img',
+      f: ['rgba(0,0,0,0)','images/Group.png']
+   }],
+   symbolInstances: [
+   ]
+   },
+   states: {
+      "Base State": {
+         "${symbolSelector}": [
+            ["style", "height", '90px'],
+            ["style", "overflow", 'hidden'],
+            ["style", "width", '90px']
+         ]
+      }
+   },
+   timelines: {
+      "Default Timeline": {
+         fromState: "Base State",
+         toState: "",
+         duration: 0,
+         autoPlay: true,
+         timeline: [
+         ]
+      }
+   }
+},
+"body_g": {
+   version: "1.5.0",
+   minimumCompatibleVersion: "1.5.0",
+   build: "1.5.0.217",
+   baseState: "Base State",
+   initialState: "Base State",
+   gpuAccelerate: false,
+   resizeInstances: false,
+   content: {
+   dom: [
+   {
+      r: ['0','1','156','155','auto','auto'],
+      id: 'Group-1',
+      t: 'image',
+      tag: 'img',
+      f: ['rgba(0,0,0,0)','images/Group-1.png']
+   }],
+   symbolInstances: [
+   ]
+   },
+   states: {
+      "Base State": {
+         "${symbolSelector}": [
+            ["style", "height", '155px'],
+            ["style", "overflow", 'hidden'],
+            ["style", "width", '156px']
+         ]
+      }
+   },
+   timelines: {
+      "Default Timeline": {
+         fromState: "Base State",
+         toState: "",
+         duration: 0,
+         autoPlay: true,
+         timeline: [
+         ]
+      }
+   }
+},
+"arms_g": {
+   version: "1.5.0",
+   minimumCompatibleVersion: "1.5.0",
+   build: "1.5.0.217",
+   baseState: "Base State",
+   initialState: "Base State",
+   gpuAccelerate: false,
+   resizeInstances: false,
+   content: {
+   dom: [
+   {
+      r: ['0','0','82','83','auto','auto'],
+      id: 'Group-2',
+      t: 'image',
+      tag: 'img',
+      f: ['rgba(0,0,0,0)','images/Group-2.png']
+   }],
+   symbolInstances: [
+   ]
+   },
+   states: {
+      "Base State": {
+         "${symbolSelector}": [
+            ["style", "height", '83px'],
+            ["style", "overflow", 'hidden'],
+            ["style", "width", '82px']
+         ]
+      }
+   },
+   timelines: {
+      "Default Timeline": {
+         fromState: "Base State",
+         toState: "",
+         duration: 0,
+         autoPlay: true,
+         timeline: [
+         ]
+      }
+   }
+},
+"leg_thigh_g": {
+   version: "1.5.0",
+   minimumCompatibleVersion: "1.5.0",
+   build: "1.5.0.217",
+   baseState: "Base State",
+   initialState: "Base State",
+   gpuAccelerate: false,
+   resizeInstances: false,
+   content: {
+   dom: [
+   {
+      r: ['0','0','94','94','auto','auto'],
+      id: 'Group-3',
+      t: 'image',
+      tag: 'img',
+      f: ['rgba(0,0,0,0)','images/Group-3.png']
+   }],
+   symbolInstances: [
+   ]
+   },
+   states: {
+      "Base State": {
+         "${symbolSelector}": [
+            ["style", "height", '94px'],
+            ["style", "overflow", 'hidden'],
+            ["style", "width", '94px']
+         ]
+      }
+   },
+   timelines: {
+      "Default Timeline": {
+         fromState: "Base State",
+         toState: "",
+         duration: 0,
+         autoPlay: true,
+         timeline: [
+         ]
+      }
+   }
+},
+"leg_calf2_g": {
+   version: "1.5.0",
+   minimumCompatibleVersion: "1.5.0",
+   build: "1.5.0.217",
+   baseState: "Base State",
+   initialState: "Base State",
+   gpuAccelerate: false,
+   resizeInstances: false,
+   content: {
+   dom: [
+   {
+      r: ['0','0','93','93','auto','auto'],
+      id: 'Group-4',
+      t: 'image',
+      tag: 'img',
+      f: ['rgba(0,0,0,0)','images/Group-4.png']
+   }],
+   symbolInstances: [
+   ]
+   },
+   states: {
+      "Base State": {
+         "${symbolSelector}": [
+            ["style", "height", '93px'],
+            ["style", "overflow", 'hidden'],
+            ["style", "width", '93px']
+         ]
+      }
+   },
+   timelines: {
+      "Default Timeline": {
+         fromState: "Base State",
+         toState: "",
+         duration: 0,
+         autoPlay: true,
+         timeline: [
+         ]
+      }
+   }
+},
+"foot_g": {
+   version: "1.5.0",
+   minimumCompatibleVersion: "1.5.0",
+   build: "1.5.0.217",
+   baseState: "Base State",
+   initialState: "Base State",
+   gpuAccelerate: false,
+   resizeInstances: false,
+   content: {
+   dom: [
+   {
+      r: ['0','0','81','35','auto','auto'],
+      id: 'Group-5',
+      t: 'image',
+      tag: 'img',
+      f: ['rgba(0,0,0,0)','images/Group-5.png']
+   }],
+   symbolInstances: [
+   ]
+   },
+   states: {
+      "Base State": {
+         "${symbolSelector}": [
+            ["style", "height", '35px'],
+            ["style", "overflow", 'hidden'],
+            ["style", "width", '81px']
+         ]
+      }
+   },
+   timelines: {
+      "Default Timeline": {
+         fromState: "Base State",
+         toState: "",
+         duration: 0,
+         autoPlay: true,
+         timeline: [
+         ]
+      }
+   }
+},
+"fart_rays_g": {
+   version: "1.5.0",
+   minimumCompatibleVersion: "1.5.0",
+   build: "1.5.0.217",
+   baseState: "Base State",
+   initialState: "Base State",
+   gpuAccelerate: false,
+   resizeInstances: false,
+   content: {
+   dom: [
+   {
+      r: ['0','1','78','147','auto','auto'],
+      id: 'fart-rays',
+      t: 'image',
+      tag: 'img',
+      f: ['rgba(0,0,0,0)','images/fart-rays.png']
+   }],
+   symbolInstances: [
+   ]
+   },
+   states: {
+      "Base State": {
+         "${_fart-rays}": [
+            ["style", "opacity", '0']
+         ],
+         "${symbolSelector}": [
+            ["style", "height", '147px'],
+            ["style", "overflow", 'hidden'],
+            ["style", "width", '78px']
+         ]
+      }
+   },
+   timelines: {
+      "Default Timeline": {
+         fromState: "Base State",
+         toState: "",
+         duration: 1025,
+         autoPlay: true,
+         timeline: [
+            { id: "dg1", tween: [ "style", "${_fart-rays}", "opacity", '0', { fromValue: '0'}], position: 0, duration: 0 },
+            { id: "dg2", tween: [ "style", "${_fart-rays}", "opacity", '1', { fromValue: '0'}], position: 250, duration: 0 },
+            { id: "dg3", tween: [ "style", "${_fart-rays}", "opacity", '0', { fromValue: '1'}], position: 515, duration: 0 },
+            { id: "dg4", tween: [ "style", "${_fart-rays}", "opacity", '1', { fromValue: '0'}], position: 750, duration: 0 },
+            { id: "dg5", tween: [ "style", "${_fart-rays}", "opacity", '0', { fromValue: '1'}], position: 1025, duration: 0 }         ]
+      }
+   }
+},
+"speak_fart_g": {
+   version: "1.5.0",
+   minimumCompatibleVersion: "1.5.0",
+   build: "1.5.0.217",
+   baseState: "Base State",
+   initialState: "Base State",
+   gpuAccelerate: false,
+   resizeInstances: false,
+   content: {
+   dom: [
+   {
+      r: ['0','2','87','100','auto','auto'],
+      id: 'speak-fart',
+      t: 'image',
+      tag: 'img',
+      f: ['rgba(0,0,0,0)','images/speak-fart.png']
+   }],
+   symbolInstances: [
+   ]
+   },
+   states: {
+      "Base State": {
+         "${symbolSelector}": [
+            ["style", "height", '100px'],
+            ["style", "overflow", 'hidden'],
+            ["style", "width", '87px']
+         ]
+      }
+   },
+   timelines: {
+      "Default Timeline": {
+         fromState: "Base State",
+         toState: "",
+         duration: 0,
+         autoPlay: true,
+         timeline: [
+         ]
+      }
+   }
+},
+"cloud_farts_g": {
+   version: "1.5.0",
+   minimumCompatibleVersion: "1.5.0",
+   build: "1.5.0.217",
+   baseState: "Base State",
+   initialState: "Base State",
+   gpuAccelerate: false,
+   resizeInstances: false,
+   content: {
+   dom: [
+   {
+      r: ['0','0','83','119','auto','auto'],
+      id: 'cloud-farts',
+      t: 'image',
+      tag: 'img',
+      f: ['rgba(0,0,0,0)','images/cloud-farts.png']
+   }],
+   symbolInstances: [
+   ]
+   },
+   states: {
+      "Base State": {
+         "${symbolSelector}": [
+            ["style", "height", '119px'],
+            ["style", "overflow", 'hidden'],
+            ["style", "width", '83px']
+         ]
+      }
+   },
+   timelines: {
+      "Default Timeline": {
+         fromState: "Base State",
+         toState: "",
+         duration: 0,
+         autoPlay: true,
+         timeline: [
+         ]
+      }
+   }
+},
+"bent_man": {
+   version: "1.5.0",
+   minimumCompatibleVersion: "1.5.0",
+   build: "1.5.0.217",
+   baseState: "Base State",
+   initialState: "Base State",
+   gpuAccelerate: false,
+   resizeInstances: false,
+   content: {
+   dom: [
+   {
+      id: 'head_g',
+      t: 'rect',
+      tf: [],
+      r: ['114px','0px','0','0','auto','auto']
+   },
+   {
+      id: 'body_g',
+      t: 'rect',
+      tf: [],
+      r: ['0px','45px','0','0','auto','auto']
+   },
+   {
+      id: 'arms_g',
+      t: 'rect',
+      tf: [],
+      r: ['134px','94px','0','0','auto','auto']
+   },
+   {
+      id: 'leg_thigh_g',
+      t: 'rect',
+      tf: [],
+      r: ['51px','170px','0','0','auto','auto']
+   },
+   {
+      id: 'leg_calf2_g',
+      t: 'rect',
+      tf: [],
+      r: ['34px','234px','0','0','auto','auto']
+   },
+   {
+      id: 'foot_g',
+      t: 'rect',
+      tf: [],
+      r: ['33px','295px','0','0','auto','auto']
+   }],
+   symbolInstances: [
+   {
+      id: 'body_g',
+      symbolName: 'body_g',
+      sN: 'body_g'
+   },
+   {
+      id: 'leg_calf2_g',
+      symbolName: 'leg_calf2_g',
+      sN: 'leg_calf2_g'
+   },
+   {
+      id: 'arms_g',
+      symbolName: 'arms_g',
+      sN: 'arms_g'
+   },
+   {
+      id: 'leg_thigh_g',
+      symbolName: 'leg_thigh_g',
+      sN: 'leg_thigh_g'
+   },
+   {
+      id: 'foot_g',
+      symbolName: 'foot_g',
+      sN: 'foot_g'
+   },
+   {
+      id: 'head_g',
+      symbolName: 'head_g',
+      sN: 'head_g'
+   }   ]
+   },
+   states: {
+      "Base State": {
+         "${_arms_g}": [
+            ["style", "left", '134px'],
+            ["style", "top", '94px']
+         ],
+         "${_head_g}": [
+            ["style", "left", '114px'],
+            ["style", "top", '0px']
+         ],
+         "${_leg_thigh_g}": [
+            ["style", "left", '51px'],
+            ["style", "top", '170px']
+         ],
+         "${_leg_calf2_g}": [
+            ["style", "left", '34px'],
+            ["style", "top", '234px']
+         ],
+         "${_foot_g}": [
+            ["style", "left", '33px'],
+            ["style", "top", '295px']
+         ],
+         "${symbolSelector}": [
+            ["style", "height", '330px'],
+            ["style", "width", '216px']
+         ],
+         "${_body_g}": [
+            ["style", "left", '0px'],
+            ["style", "top", '45px']
+         ]
+      }
+   },
+   timelines: {
+      "Default Timeline": {
+         fromState: "Base State",
+         toState: "",
+         duration: 0,
+         autoPlay: true,
+         timeline: [
+         ]
+      }
+   }
+}
+};
+
+
+Edge.registerCompositionDefn(compId, symbols, fonts, resources);
+
+/**
+ * Adobe Edge DOM Ready Event Handler
+ */
+$(window).ready(function() {
+     Edge.launchComposition(compId);
+});
+})(jQuery, AdobeEdge, "EDGE-1366769845110");
