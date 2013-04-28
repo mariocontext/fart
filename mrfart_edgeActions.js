@@ -219,6 +219,62 @@
    })("fart_whisper");
    //Edge symbol end:'fart_whisper'
 
+   //=========================================================
+   
+   //Edge symbol: 'eye'
+   (function(symbolName) {   
+   
+   })("eye");
+   //Edge symbol end:'eye'
+
+   //=========================================================
+   
+   //Edge symbol: 'expr_happy'
+   (function(symbolName) {   
+   
+   })("expr_happy");
+   //Edge symbol end:'expr_happy'
+
+   //=========================================================
+   
+   //Edge symbol: 'expr_side_neutral'
+   (function(symbolName) {   
+   
+   })("expr_side_neutral");
+   //Edge symbol end:'expr_side_neutral'
+
+   //=========================================================
+   
+   //Edge symbol: 'expr_surprised'
+   (function(symbolName) {   
+   
+   })("expr_surprised");
+   //Edge symbol end:'expr_surprised'
+
+   //=========================================================
+   
+   //Edge symbol: 'expr_anger'
+   (function(symbolName) {   
+   
+   })("expr_anger");
+   //Edge symbol end:'expr_anger'
+
+   //=========================================================
+   
+   //Edge symbol: 'expr_suffer'
+   (function(symbolName) {   
+   
+   })("expr_suffer");
+   //Edge symbol end:'expr_suffer'
+
+   //=========================================================
+   
+   //Edge symbol: 'expr_sad'
+   (function(symbolName) {   
+   
+   })("expr_sad");
+   //Edge symbol end:'expr_sad'
+
 })(jQuery, AdobeEdge, "EDGE-1366769845110");
 
 
