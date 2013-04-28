@@ -43,13 +43,6 @@ if(document.addEventListener ){
    window.attachEvent("onload", onDocLoaded );
 }
 
-   var fnOld=window.onload;
-   window.onload=function() {
-      CFInstall.check({mode:"inline"});
-      if(fnOld) {
-         fnOld();
-      }
-   };
    requiresSVG=false;
 
    doDelayLoad=false;
