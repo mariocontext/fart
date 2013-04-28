@@ -43,6 +43,13 @@ if(document.addEventListener ){
    window.attachEvent("onload", onDocLoaded );
 }
 
+   var fnOld=window.onload;
+   window.onload=function() {
+      CFInstall.check({mode:"inline"});
+      if(fnOld) {
+         fnOld();
+      }
+   };
    requiresSVG=false;
 
    doDelayLoad=false;
@@ -59,12 +66,33 @@ if (AdobeEdge.bootstrapLoading) { signaledLoading = true; AdobeEdge.loadResource
 
 loadResources(aLoader, doDelayLoad);
 
-preContent={dom:[
-]}
-;//simpleContent
+preContent={
+   dom: [
+   {
+      id:'preloader1',
+      type:'image',
+      tag:'img',
+      rect:['118','198','85px','85px','auto','auto'],
+      fill:["rgba(0,0,0,0)",'images/preloader1.gif','0px','0px']
+   }]};//simpleContent
 
-dlContent={dom: [
-]}
-;//simpleContent
+dlContent={
+   dom: [
+   {
+      id:'Poster',
+      type:'image',
+      tag:'img',
+      linkURL:"http://youtu.be/oHg5SJYRHA0",
+      rect:['0','0','320px','480px','auto','auto'],
+      fill:["rgba(0,0,0,0)",'images/Poster.png','0px','0px']
+   },
+   {
+      id:'Text',
+      type:'text',
+      rect:['76px','419px','auto','auto','auto','auto'],
+      text:"Your Device doesn't seem <br>to be able to play this. <br>Try another device?",
+      align:"center",
+      font:['Arial, Helvetica, sans-serif',16,"rgba(0,0,0,1)","normal","none",""]
+   }]};//simpleContent
 
 })( "EDGE-1366769845110");
