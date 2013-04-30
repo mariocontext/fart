@@ -3,9 +3,9 @@
 //Edge symbol: 'stage'
 (function(symbolName){Symbol.bindElementAction(compId,symbolName,"${_bent_man}","click",function(sym,e){sym.gotoAnim();});
 //Edge binding end
-Symbol.bindElementAction(compId,symbolName,"document","compositionReady",function(sym,e){sym.audio01=new buzz.sound("media/fart_01",{formats:["ogg","mp3"]});sym.audio02=new buzz.sound("media/fart2_01",{formats:["ogg","mp3"]});sym.audio03=new buzz.sound("media/fart3_01",{formats:["ogg","mp3"]});sym.audio04=new buzz.sound("media/fart4_01",{formats:["ogg","mp3"]});sym.audio05=new buzz.sound("media/fart5_01",{formats:["ogg","mp3"]});sym.audio06=new buzz.sound("media/fart6_01",{formats:["ogg","mp3"]});sym.getRandomInt=function(min,max){  return Math.floor(Math.random()*(max-min+1))+min;}
+Symbol.bindElementAction(compId,symbolName,"document","compositionReady",function(sym,e){yepnope({nope:['js/buzz.js'],complete:init});function init(){sym.audio01=new buzz.sound("http://expr.io/media/fart_01",{formats:["ogg","mp3"]});sym.audio02=new buzz.sound("http://expr.io/media/fart2_01",{formats:["ogg","mp3"]});sym.audio03=new buzz.sound("http://expr.io/media/fart3_01",{formats:["ogg","mp3"]});sym.audio04=new buzz.sound("http://expr.io/media/fart4_01",{formats:["ogg","mp3"]});sym.audio05=new buzz.sound("http://expr.io/media/fart5_01",{formats:["ogg","mp3"]});sym.audio06=new buzz.sound("http://expr.io/media/fart6_01",{formats:["ogg","mp3"]});sym.getRandomInt=function(min,max){  return Math.floor(Math.random()*(max-min+1))+min;}
 sym.labelName=function(){var labelPath="fart_lbl_"+sym.getRandomInt(1,6);return labelPath;}
-sym.gotoAnim=function(){var fartObject=sym.getComposition().getStage();var myLabel=sym.labelName();console.log(myLabel);fartObject.play(myLabel);}});
+sym.gotoAnim=function(){var fartObject=sym.getComposition().getStage();var myLabel=sym.labelName();console.log(myLabel);fartObject.play(myLabel);}}});
 //Edge binding end
 Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",500,function(sym,e){sym.stop();});
 //Edge binding end

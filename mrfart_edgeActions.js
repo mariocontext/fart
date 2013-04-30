@@ -13,13 +13,32 @@
 
 		//Edge binding end
 		Symbol.bindElementAction(compId, symbolName, "document", "compositionReady", function(sym,e){
+		
+				yepnope(
 
-		sym.audio01 = new buzz.sound("media/fart_01",  {formats:["ogg","mp3"]});
-		sym.audio02 = new buzz.sound("media/fart2_01", {formats: [ "ogg", "mp3" ]});
-      sym.audio03 = new buzz.sound("media/fart3_01", {formats: [ "ogg", "mp3" ]});
-      sym.audio04 = new buzz.sound("media/fart4_01", {formats: [ "ogg", "mp3" ]});
-      sym.audio05 = new buzz.sound("media/fart5_01", {formats: [ "ogg", "mp3" ]});
-     	sym.audio06 = new buzz.sound("media/fart6_01", {formats: [ "ogg", "mp3" ]});
+				{
+
+				nope:[
+
+				'js/buzz.js'
+
+				],
+
+				complete: init
+
+				}
+
+				);
+
+
+				function init (){
+
+		sym.audio01 = new buzz.sound("http://expr.io/media/fart_01", {formats: ["ogg","mp3"]});
+		sym.audio02 = new buzz.sound("http://expr.io/media/fart2_01", {formats: [ "ogg", "mp3" ]});
+      sym.audio03 = new buzz.sound("http://expr.io/media/fart3_01", {formats: [ "ogg", "mp3" ]});
+      sym.audio04 = new buzz.sound("http://expr.io/media/fart4_01", {formats: [ "ogg", "mp3" ]});
+      sym.audio05 = new buzz.sound("http://expr.io/media/fart5_01", {formats: [ "ogg", "mp3" ]});
+     	sym.audio06 = new buzz.sound("http://expr.io/media/fart6_01", {formats: [ "ogg", "mp3" ]});
      	
      	// Returns a random integer between min and max
          // Using Math.round() will give you a non-uniform distribution!
@@ -49,6 +68,10 @@
      	
      	}
 
+
+				}
+
+		
 
 		});
 		//Edge binding end
