@@ -35,7 +35,7 @@
          
          sym.labelName = function() {
          
-         	var labelPath = "fart_lbl_" + sym.getRandomInt(1,6);
+         	var labelPath = "fart_lbl_" + sym.getRandomInt(1,7);
          	return labelPath;
          
          }
@@ -46,9 +46,22 @@
      	
      		var fartObject = sym.getComposition().getStage();
 			var myLabel = sym.labelName();
+			
+			var advertObject = sym.getComposition().getStage().getSymbol("advert_one_g");
           
          console.log(myLabel);
-         fartObject.play(myLabel);	
+         
+         	if(myLabel === "fart_lbl_7") {
+         	
+         		advertObject.play();
+         	
+         	} else {
+         		
+         		fartObject.play(myLabel);
+         		
+         	}
+         
+         	
      	
      	}
 
@@ -318,6 +331,47 @@
    
    })("touch_anim_circ_g");
    //Edge symbol end:'touch_anim_circ_g'
+
+   //=========================================================
+   
+   //Edge symbol: 'advert_one_g'
+   (function(symbolName) {   
+   
+      Symbol.bindElementAction(compId, symbolName, "${_visit_button_g}", "click", function(sym, e) {
+         // insert code for mouse click here
+         // Navigate to a new URL in the current window
+         // (replace "_self" with appropriate target attribute for a new window)
+         window.open("http://www.google.com", "_self");
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_no_button_g}", "click", function(sym, e) {
+         // insert code for mouse click here
+         sym.playReverse();
+
+      });
+      //Edge binding end
+
+   })("advert_one_g");
+   //Edge symbol end:'advert_one_g'
+
+   //=========================================================
+   
+   //Edge symbol: 'no_button_g'
+   (function(symbolName) {   
+   
+   })("no_button_g");
+   //Edge symbol end:'no_button_g'
+
+   //=========================================================
+   
+   //Edge symbol: 'visit_button_g'
+   (function(symbolName) {   
+   
+   })("visit_button_g");
+   //Edge symbol end:'visit_button_g'
 
 })(jQuery, AdobeEdge, "EDGE-1366769845110");
 

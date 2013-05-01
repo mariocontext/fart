@@ -4,8 +4,8 @@
 (function(symbolName){var rootSiteUrlPath="http://expr.io/media/";Symbol.bindElementAction(compId,symbolName,"${_bent_man}","click",function(sym,e){sym.gotoAnim();});
 //Edge binding end
 Symbol.bindElementAction(compId,symbolName,"document","compositionReady",function(sym,e){sym.audio01=new buzz.sound(rootSiteUrlPath+"fart_01",{formats:["ogg","mp3"]});sym.audio02=new buzz.sound(rootSiteUrlPath+"fart2_01",{formats:["ogg","mp3"]});sym.audio03=new buzz.sound(rootSiteUrlPath+"fart3_01",{formats:["ogg","mp3"]});sym.audio04=new buzz.sound(rootSiteUrlPath+"fart4_01",{formats:["ogg","mp3"]});sym.audio05=new buzz.sound(rootSiteUrlPath+"fart5_01",{formats:["ogg","mp3"]});sym.audio06=new buzz.sound(rootSiteUrlPath+"fart6_01",{formats:["ogg","mp3"]});sym.getRandomInt=function(min,max){  return Math.floor(Math.random()*(max-min+1))+min;}
-sym.labelName=function(){var labelPath="fart_lbl_"+sym.getRandomInt(1,6);return labelPath;}
-sym.gotoAnim=function(){var fartObject=sym.getComposition().getStage();var myLabel=sym.labelName();console.log(myLabel);fartObject.play(myLabel);}});
+sym.labelName=function(){var labelPath="fart_lbl_"+sym.getRandomInt(1,7);return labelPath;}
+sym.gotoAnim=function(){var fartObject=sym.getComposition().getStage();var myLabel=sym.labelName();var advertObject=sym.getComposition().getStage().getSymbol("advert_one_g");console.log(myLabel);if(myLabel==="fart_lbl_7"){advertObject.play();}else{fartObject.play(myLabel);}}});
 //Edge binding end
 Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",500,function(sym,e){sym.stop();});
 //Edge binding end
@@ -141,4 +141,26 @@ Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",0,function(sym,e){
 //Edge symbol: 'touch_anim_circ_g'
 (function(symbolName){})("touch_anim_circ_g");
 //Edge symbol end:'touch_anim_circ_g'
+
+//=========================================================
+
+//Edge symbol: 'advert_one_g'
+(function(symbolName){Symbol.bindElementAction(compId,symbolName,"${_visit_button_g}","click",function(sym,e){window.open("http://www.google.com","_self");});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${_no_button_g}","click",function(sym,e){sym.playReverse();});
+//Edge binding end
+})("advert_one_g");
+//Edge symbol end:'advert_one_g'
+
+//=========================================================
+
+//Edge symbol: 'no_button_g'
+(function(symbolName){})("no_button_g");
+//Edge symbol end:'no_button_g'
+
+//=========================================================
+
+//Edge symbol: 'visit_button_g'
+(function(symbolName){})("visit_button_g");
+//Edge symbol end:'visit_button_g'
 })(jQuery,AdobeEdge,"EDGE-1366769845110");
