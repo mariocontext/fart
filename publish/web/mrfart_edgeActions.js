@@ -31,7 +31,9 @@ Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",2009,function(sym,
 //Edge binding end
 Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",2402,function(sym,e){sym.getComposition().getStage().audio05.play();});
 //Edge binding end
-Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",0,function(sym,e){sym.stop();});
+Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",0,function(sym,e){sym.stop();sym.getComposition().getStage().getSymbol("touch_anim_g").play();});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${_touch_anim_g}","click",function(sym,e){sym.gotoAnim();});
 //Edge binding end
 })("stage");
 //Edge symbol end:'stage'
@@ -123,4 +125,20 @@ Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",1020,function(sym,
 //Edge symbol: 'expr_sad'
 (function(symbolName){})("expr_sad");
 //Edge symbol end:'expr_sad'
+
+//=========================================================
+
+//Edge symbol: 'touch_anim_g'
+(function(symbolName){Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",3000,function(sym,e){sym.playReverse();});
+//Edge binding end
+Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",0,function(sym,e){sym.play();});
+//Edge binding end
+})("touch_anim_g");
+//Edge symbol end:'touch_anim_g'
+
+//=========================================================
+
+//Edge symbol: 'touch_anim_circ_g'
+(function(symbolName){})("touch_anim_circ_g");
+//Edge symbol end:'touch_anim_circ_g'
 })(jQuery,AdobeEdge,"EDGE-1366769845110");
