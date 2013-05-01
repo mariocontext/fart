@@ -1,11 +1,11 @@
 
 (function($,Edge,compId){var Composition=Edge.Composition,Symbol=Edge.Symbol;
 //Edge symbol: 'stage'
-(function(symbolName){var rootSiteUrlPath="http://expr.io/media/";Symbol.bindElementAction(compId,symbolName,"${_bent_man}","click",function(sym,e){sym.gotoAnim();});
+(function(symbolName){var rootSiteUrlPath="http://expr.io/media/";var advertPlayed=false;var mySoundStatus=false;Symbol.bindElementAction(compId,symbolName,"${_bent_man}","click",function(sym,e){sym.gotoAnim();});
 //Edge binding end
 Symbol.bindElementAction(compId,symbolName,"document","compositionReady",function(sym,e){sym.audio01=new buzz.sound(rootSiteUrlPath+"fart_01",{formats:["ogg","mp3"]});sym.audio02=new buzz.sound(rootSiteUrlPath+"fart2_01",{formats:["ogg","mp3"]});sym.audio03=new buzz.sound(rootSiteUrlPath+"fart3_01",{formats:["ogg","mp3"]});sym.audio04=new buzz.sound(rootSiteUrlPath+"fart4_01",{formats:["ogg","mp3"]});sym.audio05=new buzz.sound(rootSiteUrlPath+"fart5_01",{formats:["ogg","mp3"]});sym.audio06=new buzz.sound(rootSiteUrlPath+"fart6_01",{formats:["ogg","mp3"]});sym.getRandomInt=function(min,max){  return Math.floor(Math.random()*(max-min+1))+min;}
 sym.labelName=function(){var labelPath="fart_lbl_"+sym.getRandomInt(1,7);return labelPath;}
-sym.gotoAnim=function(){var fartObject=sym.getComposition().getStage();var myLabel=sym.labelName();var advertObject=sym.getComposition().getStage().getSymbol("advert_one_g");console.log(myLabel);if(myLabel==="fart_lbl_7"){advertObject.play();}else{fartObject.play(myLabel);}}});
+sym.gotoAnim=function(){var fartObject=sym.getComposition().getStage();var myLabel=sym.labelName();var advertObject=sym.getComposition().getStage().getSymbol("advert_one_g");console.log(advertPlayed);console.log(myLabel);if(myLabel==="fart_lbl_7"&&advertPlayed===false){advertObject.play();advertPlayed=true;return advertPlayed;}else if(myLabel==="fart_lbl_7"&&advertPlayed===true){fartObject.play("fart_lbl_6");console.log("playing 6 instead");}else{fartObject.play(myLabel);}}});
 //Edge binding end
 Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",500,function(sym,e){sym.stop();});
 //Edge binding end
@@ -34,6 +34,9 @@ Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",2402,function(sym,
 Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",0,function(sym,e){sym.stop();sym.getComposition().getStage().getSymbol("touch_anim_g").play();});
 //Edge binding end
 Symbol.bindElementAction(compId,symbolName,"${_touch_anim_g}","click",function(sym,e){sym.gotoAnim();});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${_sound_button_g}","click",function(sym,e){for(var i in buzz.sounds){buzz.sounds[i].toggleMute();}
+var soundToggle=sym.getComposition().getStage().getSymbol("sound_button_g");console.log(soundToggle);if(mySoundStatus===false){soundToggle.play(2);mySoundStatus=true;console.log("mySoundStatus "+mySoundStatus);return mySoundStatus;}else{soundToggle.stop(1);mySoundStatus=false;console.log("mySoundStatus "+mySoundStatus);return mySoundStatus;}});
 //Edge binding end
 })("stage");
 //Edge symbol end:'stage'
@@ -163,4 +166,26 @@ Symbol.bindElementAction(compId,symbolName,"${_no_button_g}","click",function(sy
 //Edge symbol: 'visit_button_g'
 (function(symbolName){})("visit_button_g");
 //Edge symbol end:'visit_button_g'
+
+//=========================================================
+
+//Edge symbol: 'sound_button_g'
+(function(symbolName){Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",0,function(sym,e){sym.stop();});
+//Edge binding end
+Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",9,function(sym,e){sym.stop();});
+//Edge binding end
+})("sound_button_g");
+//Edge symbol end:'sound_button_g'
+
+//=========================================================
+
+//Edge symbol: 'mute_sound_g'
+(function(symbolName){})("mute_sound_g");
+//Edge symbol end:'mute_sound_g'
+
+//=========================================================
+
+//Edge symbol: 'unmute_sound_g'
+(function(symbolName){})("unmute_sound_g");
+//Edge symbol end:'unmute_sound_g'
 })(jQuery,AdobeEdge,"EDGE-1366769845110");

@@ -415,7 +415,7 @@
 	"fart_rays_g-Default Timeline_playhead_ms":"0",
 	"expr_side_neutral-Default Timeline_playhead_ms":"0",
 	"viewStartMs":"-5",
-	"pref__general__AutoKeyframePropertiesArmed":"false",
+	"pref__general__AutoKeyframePropertiesArmed":"true",
 	"fart_rays_g-Default Timeline_mark_ms":"-1",
 	"symbol_stage":{
 		"element_${_fart_whisper}":{
@@ -696,13 +696,13 @@
 			"locked":"true",
 			"animationEnabled":"true",
 			"invisible":"false"}},
-	"TransitionIdCounter":"1429",
+	"TransitionIdCounter":"1561",
 	"symbol_Down-level":{
 		"defaultStageParentWidth":"320px",
 		"defaultStageParentHeight":"480px",
 		"dummyStageParentWidth":"320px",
 		"dummyStageParentHeight":"480px"},
-	"viewStartY":"873",
+	"viewStartY":"0",
 	"symbol_fart_ray_basic":{
 		"element_${_fart-rays}":{
 			"timelineColor2":"0xcbbd71",

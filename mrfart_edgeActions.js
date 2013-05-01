@@ -5,6 +5,7 @@
 		
 		var rootSiteUrlPath = "http://expr.io/media/";
 		var advertPlayed = false;
+		var mySoundStatus = false;
 		
 		Symbol.bindElementAction(compId, symbolName, "${_bent_man}", "click", function(sym,e){
 		
@@ -186,6 +187,27 @@
          for(var i in buzz.sounds) {
              buzz.sounds[i].toggleMute();
          }
+         
+         
+         var soundToggle = sym.getComposition().getStage().getSymbol("sound_button_g");
+         console.log(soundToggle);
+         
+         if(mySoundStatus === false) {
+         
+         	soundToggle.play(2);
+         	mySoundStatus = true;
+         	console.log("mySoundStatus " + mySoundStatus);
+         	return mySoundStatus;
+         
+         } else {
+         
+         	soundToggle.stop(1);
+         	mySoundStatus = false;
+         	console.log("mySoundStatus " +mySoundStatus);
+         	return mySoundStatus;
+         
+         }
+         
 
       });
       //Edge binding end
@@ -397,6 +419,20 @@
    //Edge symbol: 'sound_button_g'
    (function(symbolName) {   
    
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
+         // insert code here
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 9, function(sym, e) {
+         // insert code here
+         sym.stop();
+
+      });
+      //Edge binding end
+
    })("sound_button_g");
    //Edge symbol end:'sound_button_g'
 
