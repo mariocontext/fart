@@ -4,6 +4,7 @@
 		(function(symbolName){
 		
 		var rootSiteUrlPath = "http://expr.io/media/";
+		var advertPlayed = false;
 		
 		Symbol.bindElementAction(compId, symbolName, "${_bent_man}", "click", function(sym,e){
 		
@@ -48,15 +49,24 @@
 			var myLabel = sym.labelName();
 			
 			var advertObject = sym.getComposition().getStage().getSymbol("advert_one_g");
+			
+			console.log(advertPlayed);
           
          console.log(myLabel);
          
-         	if(myLabel === "fart_lbl_7") {
+         	if(myLabel === "fart_lbl_7" && advertPlayed === false) {
          	
          		advertObject.play();
+         		advertPlayed = true;
+         		return advertPlayed;
          	
-         	} else {
+         	} else if (myLabel === "fart_lbl_7" && advertPlayed === true) {
          		
+         		fartObject.play("fart_lbl_6");
+         		console.log("playing 6 instead");
+         		
+         	} else {
+         	
          		fartObject.play(myLabel);
          		
          	}
@@ -167,6 +177,15 @@
       Symbol.bindElementAction(compId, symbolName, "${_touch_anim_g}", "click", function(sym, e) {
          // insert code for mouse click here
          sym.gotoAnim();
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_sound_button_g}", "click", function(sym, e) {
+         // insert code for mouse click here
+         for(var i in buzz.sounds) {
+             buzz.sounds[i].toggleMute();
+         }
 
       });
       //Edge binding end
@@ -372,6 +391,30 @@
    
    })("visit_button_g");
    //Edge symbol end:'visit_button_g'
+
+   //=========================================================
+   
+   //Edge symbol: 'sound_button_g'
+   (function(symbolName) {   
+   
+   })("sound_button_g");
+   //Edge symbol end:'sound_button_g'
+
+   //=========================================================
+   
+   //Edge symbol: 'mute_sound_g'
+   (function(symbolName) {   
+   
+   })("mute_sound_g");
+   //Edge symbol end:'mute_sound_g'
+
+   //=========================================================
+   
+   //Edge symbol: 'unmute_sound_g'
+   (function(symbolName) {   
+   
+   })("unmute_sound_g");
+   //Edge symbol end:'unmute_sound_g'
 
 })(jQuery, AdobeEdge, "EDGE-1366769845110");
 
